@@ -1,20 +1,13 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+import Characters from './characters';
 
 export default function Home() {
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-    </Layout>
-  )
+    
+    <nav className="navbar navbar-light bg-light">
+    <form className="form-inline" onSubmit={Characters}> 
+        <a className="btn btn-outline-success my-2 my-sm-0" href="/characters">Liste Personnages</a>
+    </form>
+    <h1 className="col-sm-6"> Rick et Morty</h1>
+    </nav>
+  );
 }

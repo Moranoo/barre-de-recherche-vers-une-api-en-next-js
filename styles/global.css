@@ -25,3 +25,9 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.character-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
